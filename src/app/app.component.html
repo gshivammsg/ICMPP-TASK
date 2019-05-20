@@ -1,0 +1,9 @@
+<p > Welcome To The Image Searching App</p>
+
+<input type="text" #query>
+<button (click)="onSearch(query)">Search</button>
+
+<div *ngFor="let image of images">
+  <p>This is the image for {{image.tags}}.</p>
+<img src="{{image.webformatURL}}">
+</div>
